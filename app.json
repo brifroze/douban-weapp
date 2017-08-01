@@ -1,0 +1,27 @@
+{
+  "pages": ["pages/index/index", "pages/awesome/index"],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "电影",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "最近热门",
+        "iconPath": "images/hot.png",
+        "selectedIconPath": "images/hot-s.png"
+      },
+      {
+        "pagePath": "pages/awesome/index",
+        "text": "评分排行",
+        "iconPath": "images/rank.png",
+        "selectedIconPath": "images/rank-s.png"
+      }
+    ],
+    "selectedColor": "#d81e06"
+  },
+  "debug": true
+}

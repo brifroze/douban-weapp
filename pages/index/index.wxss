@@ -1,0 +1,43 @@
+.list_container {
+    height: 400rpx;
+    width: 100%;
+    padding: 12rpx;
+    display: flex;
+    font-size: 30rpx;
+}
+.wrapper {
+    margin-right: 12rpx;
+}
+.movie_img {
+    width: 300rpx;
+    height: 400rpx;
+}
+.right_side {
+    flex: 1;
+    padding: 12rpx;
+}
+.right_side view {
+    margin-bottom: 22rpx;
+}
+.right_side view text {
+    margin-right: 12rpx;
+}
+.title {
+    font-size: 40rpx;
+    line-height: 45rpx;
+}
+.year {
+    color: #999;
+}
+.grade {
+    color: #eda851;
+    font-size: 50rpx;
+    vertical-align: middle;
+}
+.circulation text {
+    display: inline-block;
+    line-height: 60rpx;
+}
+.people {
+    color: #d81e06;
+}

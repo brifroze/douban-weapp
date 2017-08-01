@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true">
+    <view class="list_container" wx:for="{{movieList}}" wx:key="{{item.id}}">
+        <view class="wrapper">
+            <image class="movie_img" src="{{item.images.large}}"></image>
+        </view>
+        <view class="right_side">
+            <view class="title">
+                <text>{{item.title}}</text>
+                <text class="year">{{item.year}}</text>
+            </view>
+            <view>
+                <text>评分:</text>
+                <text class="grade">{{item.rating.average}}</text>
+            </view>
+            <view>
+                <text>导演:</text>
+                <text>{{item.directors[0].name}}</text>
+            </view>
+            <view class="circulation">
+                <text>主演:</text>
+                <text wx:for="{{item.casts}}" wx:for-item="actors" wx:key="{{actors.name}}">{{actors.name}}</text>
+            </view>
+            <view>
+                <text>看过的人:</text>
+                <text class="people">{{item.collect_count}}</text>
+            </view>
+        </view>
+    </view>
+</scroll-view>
